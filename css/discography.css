@@ -22,13 +22,13 @@
   background-position: center 70%;
   background-image: url("https://i.pinimg.com/1200x/85/b5/9d/85b59d555034c391bc217933b3952866.jpg");
 }
+
 .banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
   color: palevioletred;
   font-size: 100px;
-}
-.banner-links {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  text-decoration: none;
 }
