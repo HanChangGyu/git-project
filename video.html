@@ -6,39 +6,54 @@
     <title>Video - BLACKPINK 비공식 홈페이지</title>
     <link rel="stylesheet" href="css/common.css" />
     <style>
+      .main-box {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 10px;
+      }
+
       .video-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         gap: 20px;
         list-style: none;
-        padding: 0;
-        margin: 40px 0;
+        padding: 0px;
       }
-      .video-item-card {
-        background: #fff;
-        border: 1px solid #eee;
-        border-radius: 8px;
-        overflow: hidden;
-      }
-      .video-thumbnail img {
+      .video-card img {
         width: 100%;
         display: block;
       }
-      .video-info {
-        padding: 15px;
+      iframe {
+        display: block;
+        margin: 0 auto;
       }
-      .video-info p {
-        margin: 0;
-        line-height: 1.5;
+      .card-text {
+        text-align: center;
+        font-size: 20px;
       }
-      .video-info p:first-child {
-        font-weight: bold;
-        margin-bottom: 5px;
+      .video-date {
+        text-align: center;
+        font-size: 20px;
       }
-      .video-info p:last-child {
-        font-size: 0.9em;
-        color: #666;
+      .video-title {
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 50px;
+        margin-top: 10px;
+      }
+      .hero {
+        background-image: url("https://i.namu.wiki/i/24vSQdkLTW0Ud0bCgSMIVEXHAnP6Al-QqrTcHPAvlTqEZjHnBpTEBvhbX8phmBH49mJQ-UffrJglWwhuGt0frEn-EVjPj3zyk7XyhUmaHcvr6Ws-e_DEdnmvg2ihlMOSzP8PHBvyK3iBEx7GAk89PQ.webp");
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+
+        height: 450px;
+      }
+      .page-title {
+        font-size: 40px;
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
       }
     </style>
   </head>
@@ -58,145 +73,116 @@
         </nav>
       </div>
     </header>
-
-    <main class="video-page-container">
-      <div class="video-inner-wrap">
-        <h2 class="video-main-title">VIDEO</h2>
-
-        <section class="video-hero-section">
-          <div class="video-ratio-box">
+    <main>
+      <div class="hero"></div>
+      <div class="main-box">
+        <h2 class="page-title">VIDEO</h2>
+        <div class="board-wrap">
+          <section>
+            <!-- 배경 이미지 영역 -->
             <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/bwmSjveL3Lc"
+              width="100%"
+              height="550px"
+              src="https://www.youtube.com/embed/bwmSjveL3Lc?si=i6a3hm2dAsYWAkkt"
               title="YouTube video player"
               frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
-          </div>
-        </section>
+            <p class="video-date">2026.03.14</p>
+            <h2 class="video-title">블랙핑크 뛰어</h2>
+            <div class="main-name"></div>
+          </section>
 
-        <section class="video-list-section">
-          <ul class="video-list">
-            <li class="video-item-card">
-              <a
-                href="https://youtu.be/CgCVZdcKcqY"
-                target="_blank"
-                class="video-link"
-              >
-                <div class="video-thumbnail">
+          <section>
+            <!-- 영상 목록 영역 -->
+            <ul class="video-list">
+              <li class="video-card">
+                <a
+                  href="https://www.youtube.com/watch?v=bwmSjveL3Lc&list=PLANgXIaQPqHKMgc7ZV7SVUXthnFFqq76G"
+                >
                   <img
-                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
-                    alt="썸네일"
-                    loading="lazy"
+                    src="https://img.youtube.com/vi/영상ID/maxresdefault.jpg"
+                    alt="블랙핑크 뛰어"
                   />
-                </div>
-              </a>
-              <div class="video-info">
-                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
-                <p>2025.07.11</p>
-              </div>
-            </li>
-            <li class="video-item-card">
-              <a
-                href="https://youtu.be/CgCVZdcKcqY"
-                target="_blank"
-                class="video-link"
-              >
-                <div class="video-thumbnail">
+                </a>
+                <p class="card-text">블랙핑크 노래</p>
+                <p class="card-text">2022.03.21</p>
+              </li>
+              <li class="video-card">
+                <a
+                  href="https://www.youtube.com/watch?v=bwmSjveL3Lc&list=PLANgXIaQPqHKMgc7ZV7SVUXthnFFqq76G"
+                >
                   <img
-                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
-                    alt="썸네일"
-                    loading="lazy"
+                    src="https://img.youtube.com/vi/영상ID/maxresdefault.jpg"
+                    alt="블랙핑크 뛰어"
                   />
-                </div>
-              </a>
-              <div class="video-info">
-                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
-                <p>2025.07.11</p>
-              </div>
-            </li>
-            <li class="video-item-card">
-              <a
-                href="https://youtu.be/CgCVZdcKcqY"
-                target="_blank"
-                class="video-link"
-              >
-                <div class="video-thumbnail">
+                </a>
+                <p class="card-text">블랙핑크 노래</p>
+                <p class="card-text">2022.03.21</p>
+              </li>
+              <li class="video-card">
+                <a
+                  href="https://www.youtube.com/watch?v=bwmSjveL3Lc&list=PLANgXIaQPqHKMgc7ZV7SVUXthnFFqq76G"
+                >
                   <img
-                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
-                    alt="썸네일"
-                    loading="lazy"
+                    src="https://img.youtube.com/vi/영상ID/maxresdefault.jpg"
+                    alt="블랙핑크 뛰어"
                   />
-                </div>
-              </a>
-              <div class="video-info">
-                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
-                <p>2025.07.11</p>
-              </div>
-            </li>
-            <li class="video-item-card">
-              <a
-                href="https://youtu.be/CgCVZdcKcqY"
-                target="_blank"
-                class="video-link"
-              >
-                <div class="video-thumbnail">
+                </a>
+                <p class="card-text">블랙핑크 노래</p>
+                <p class="card-text">2022.03.21</p>
+              </li>
+              <li class="video-card">
+                <a
+                  href="https://www.youtube.com/watch?v=bwmSjveL3Lc&list=PLANgXIaQPqHKMgc7ZV7SVUXthnFFqq76G"
+                >
                   <img
-                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
-                    alt="썸네일"
-                    loading="lazy"
+                    src="https://img.youtube.com/vi/영상ID/maxresdefault.jpg"
+                    alt="블랙핑크 뛰어"
                   />
-                </div>
-              </a>
-              <div class="video-info">
-                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
-                <p>2025.07.11</p>
-              </div>
-            </li>
-            <li class="video-item-card">
-              <a
-                href="https://youtu.be/CgCVZdcKcqY"
-                target="_blank"
-                class="video-link"
-              >
-                <div class="video-thumbnail">
+                </a>
+                <p class="card-text">블랙핑크 노래</p>
+                <p class="card-text">2022.03.21</p>
+              </li>
+              <li class="video-card">
+                <a
+                  href="https://www.youtube.com/watch?v=bwmSjveL3Lc&list=PLANgXIaQPqHKMgc7ZV7SVUXthnFFqq76G"
+                >
                   <img
-                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
-                    alt="썸네일"
-                    loading="lazy"
+                    src="https://img.youtube.com/vi/영상ID/maxresdefault.jpg"
+                    alt="블랙핑크 뛰어"
                   />
-                </div>
-              </a>
-              <div class="video-info">
-                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
-                <p>2025.07.11</p>
-              </div>
-            </li>
-            <li class="video-item-card">
-              <a
-                href="https://youtu.be/CgCVZdcKcqY"
-                target="_blank"
-                class="video-link"
-              >
-                <div class="video-thumbnail">
+                </a>
+                <p class="card-text">블랙핑크 노래</p>
+                <p class="card-text">2022.03.21</p>
+              </li>
+              <li class="video-card">
+                <a
+                  href="https://www.youtube.com/watch?v=bwmSjveL3Lc&list=PLANgXIaQPqHKMgc7ZV7SVUXthnFFqq76G"
+                >
                   <img
-                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
-                    alt="썸네일"
-                    loading="lazy"
+                    src="https://img.youtube.com/vi/영상ID/maxresdefault.jpg"
+                    alt="블랙핑크 뛰어"
                   />
-                </div>
-              </a>
-              <div class="video-info">
-                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
-                <p>2025.07.11</p>
-              </div>
-            </li>
-          </ul>
-        </section>
+                </a>
+                <p class="card-text">블랙핑크 노래</p>
+                <p class="card-text">2022.03.21</p>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
     </main>
-
     <footer class="main-footer">
       <div class="footer-logo">BLACKPINK IN YOUR AREA</div>
       <p class="copyright">
