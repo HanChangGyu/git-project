@@ -4,19 +4,159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BLACKPINK 비공식 홈페이지 - BlackPink In your Area</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/snsContact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="blackpink-logo.png" alt="Blackpink Logo"></a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="discography.html">Discography</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="notice.html">Notice</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
+    <header class="main-header">
+      <div class="header-inner">
+        <h1 class="logo">
+          <a href="index.html">BLACKPINK</a>
+        </h1>
+
+        <nav class="nav-menu">
+          <a href="profile.html">PROFILE</a>
+          <a href="discography.html">DISCOGRAPHY</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="video.html">VIDEO</a>
+          <a href="memberStory.html">MEMBER STORY</a>
+          <a href="notice.html">NOTICE</a>
         </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-visual"></section>
+      <section class="sns-container">
+        <div class="sns-inner">
+          <div class="sns-links">
+            <a href="https://m.cafe.daum.net/BLACKPINK1/_rec" target="_blank"
+              ><i class="fa-solid fa-heart"></i> Fan Club</a
+            >
+            <a
+              href="https://www.facebook.com/BLACKPINKOFFICIAL/"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i> Facebook</a
+            >
+            <a href="https://x.com/ygofficialblink" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i> X</a
+            >
+            <a
+              href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i> YouTube</a
+            >
+            <a href="https://www.tiktok.com/@bp_tiktok" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i> Tiktok</a
+            >
+            <a href="https://weverse.io/blackpink/feed?hl=ko" target="_blank"
+              ><i class="fa-solid fa-w"></i> Weverse</a
+            >
+            <a
+              href="https://www.instagram.com/blackpinkofficial/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i> Instagram</a
+            >
+          </div>
+
+          <div class="contact-area">
+            <input
+              type="checkbox"
+              id="contact-modal-toggle"
+              class="modal-checkbox"
+              style="display: none"
+            />
+
+            <label for="contact-modal-toggle" class="contact-btn"
+              >CONTACT US</label
+            >
+
+            <div class="modal-overlay">
+              <div class="modal-window">
+                <label for="contact-modal-toggle" class="modal-close"
+                  >&times;</label
+                >
+
+                <div class="modal-header">
+                  <h2>CONTACT US</h2>
+                </div>
+
+                <div class="modal-body">
+                  <form action="#" method="post" class="contact-form">
+                    <div class="form-group">
+                      <label for="user-gender">Gender</label>
+                      <select id="user-gender" name="gender" required>
+                        <option value="" disabled selected>
+                          Select your gender
+                        </option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="user-name">Name</label>
+                      <input
+                        type="text"
+                        id="user-name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="user-contact">Tel</label>
+                      <input
+                        type="tel"
+                        id="user-contact"
+                        name="contact"
+                        placeholder="010-xxxx-xxxx"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="user-email">EMail</label>
+                      <input
+                        type="email"
+                        id="user-email"
+                        name="email"
+                        placeholder="email@example.com"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-logo">BLACKPINK IN YOUR AREA</div>
+      <p class="copyright">
+        Copyright(c) 2026 YG ENTERTAINMENT. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
