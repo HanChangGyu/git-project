@@ -1,0 +1,117 @@
+/* 임시 리셋 처리 */
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: 0;
+}
+
+/* 상위 box  */
+.content {
+  min-width: 1000px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ms-nav-container {
+  min-width: 300px;
+  height: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.ms-name-box {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.ms-avartor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.ms-nav-name {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.ms-nav-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.ms-nav-link:hover {
+  background-color: #99999926;
+}
+
+/* content 영역 */
+
+.ms-content {
+  min-width: 700px;
+  padding: 20px;
+}
+
+.ms-con-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ms-con-mark {
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  background-image: url("../images/memberStory/ico_mark.png");
+}
+
+.ms-comment-box {
+  padding: 20px;
+}
+
+.ms-comment-name {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ms-comment {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.ms-reaction-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ms-reaction-btn {
+  cursor: pointer;
+  min-width: 80px;
+  height: 30px;
+  background-color: #efefef;
+  background-image: url("../images/memberStory/ico_tumbsup.png");
+  background-repeat: no-repeat;
+  background-position: 9px 5px;
+  padding-left: 30px;
+  border-radius: 20px;
+  border: 1px solid #bbbbbb;
+}
