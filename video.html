@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video - BLACKPINK 비공식 홈페이지</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .video-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 40px 0;
+      }
+      .video-item-card {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .video-thumbnail img {
+        width: 100%;
+        display: block;
+      }
+      .video-info {
+        padding: 15px;
+      }
+      .video-info p {
+        margin: 0;
+        line-height: 1.5;
+      }
+      .video-info p:first-child {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .video-info p:last-child {
+        font-size: 0.9em;
+        color: #666;
+      }
+    </style>
   </head>
   <body>
     <header class="main-header">
@@ -12,7 +48,6 @@
         <h1 class="logo">
           <a href="index.html">BLACKPINK</a>
         </h1>
-
         <nav class="nav-menu">
           <a href="profile.html">PROFILE</a>
           <a href="discography.html">DISCOGRAPHY</a>
@@ -23,6 +58,144 @@
         </nav>
       </div>
     </header>
+
+    <main class="video-page-container">
+      <div class="video-inner-wrap">
+        <h2 class="video-main-title">VIDEO</h2>
+
+        <section class="video-hero-section">
+          <div class="video-ratio-box">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/bwmSjveL3Lc"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+
+        <section class="video-list-section">
+          <ul class="video-list">
+            <li class="video-item-card">
+              <a
+                href="https://youtu.be/CgCVZdcKcqY"
+                target="_blank"
+                class="video-link"
+              >
+                <div class="video-thumbnail">
+                  <img
+                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
+                    alt="썸네일"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <div class="video-info">
+                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
+                <p>2025.07.11</p>
+              </div>
+            </li>
+            <li class="video-item-card">
+              <a
+                href="https://youtu.be/CgCVZdcKcqY"
+                target="_blank"
+                class="video-link"
+              >
+                <div class="video-thumbnail">
+                  <img
+                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
+                    alt="썸네일"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <div class="video-info">
+                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
+                <p>2025.07.11</p>
+              </div>
+            </li>
+            <li class="video-item-card">
+              <a
+                href="https://youtu.be/CgCVZdcKcqY"
+                target="_blank"
+                class="video-link"
+              >
+                <div class="video-thumbnail">
+                  <img
+                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
+                    alt="썸네일"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <div class="video-info">
+                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
+                <p>2025.07.11</p>
+              </div>
+            </li>
+            <li class="video-item-card">
+              <a
+                href="https://youtu.be/CgCVZdcKcqY"
+                target="_blank"
+                class="video-link"
+              >
+                <div class="video-thumbnail">
+                  <img
+                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
+                    alt="썸네일"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <div class="video-info">
+                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
+                <p>2025.07.11</p>
+              </div>
+            </li>
+            <li class="video-item-card">
+              <a
+                href="https://youtu.be/CgCVZdcKcqY"
+                target="_blank"
+                class="video-link"
+              >
+                <div class="video-thumbnail">
+                  <img
+                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
+                    alt="썸네일"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <div class="video-info">
+                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
+                <p>2025.07.11</p>
+              </div>
+            </li>
+            <li class="video-item-card">
+              <a
+                href="https://youtu.be/CgCVZdcKcqY"
+                target="_blank"
+                class="video-link"
+              >
+                <div class="video-thumbnail">
+                  <img
+                    src="https://img.youtube.com/vi/CgCVZdcKcqY/maxresdefault.jpg"
+                    alt="썸네일"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <div class="video-info">
+                <p>BLACKPINK - ‘뛰어(JUMP)’ M/V</p>
+                <p>2025.07.11</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
 
     <footer class="main-footer">
       <div class="footer-logo">BLACKPINK IN YOUR AREA</div>
