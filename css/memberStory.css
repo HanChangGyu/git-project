@@ -164,20 +164,17 @@ input:active {
   padding: 20px;
 }
 
-.ms-comment-name {
-  font-size: 12px;
-  font-weight: 500;
+.ms-comment-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
 }
 
 .ms-cont-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.ms-comment {
-  font-size: 12px;
-  font-weight: 300;
 }
 
 .ms-reaction-box {
@@ -196,7 +193,7 @@ input:active {
   border-radius: 20px;
   border: 1px solid #bbbbbb50;
   background-repeat: no-repeat;
-  background-position: 13px 6px;
+  background-position: 10px 6px;
 }
 
 .ms-reaction-btn.b-tumup {
