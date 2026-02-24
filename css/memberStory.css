@@ -111,19 +111,32 @@ button {
   padding: 10px 20px;
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .ms-reaction-btn {
   cursor: pointer;
-  min-width: 80px;
+  min-width: 70px;
   height: 30px;
   background-color: #efefef;
-  background-image: url("../images/memberStory/ico_tumbsup.png");
-  background-repeat: no-repeat;
-  background-position: 13px 4px;
-  padding-left: 30px;
+  padding-left: 20px;
   border-radius: 20px;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #bbbbbb50;
+  background-repeat: no-repeat;
+  background-position: 13px 6px;
+}
+
+.ms-reaction-btn.b-tumup {
+  background-image: url("../images/memberStory/ico_tumbsup.png");
+}
+.ms-reaction-btn.b-heart {
+  background-image: url("../images/memberStory/ico_haert.png");
+}
+.ms-reaction-btn.b-makeup {
+  background-image: url("../images/memberStory/ico_makeup.png");
+}
+.ms-reaction-btn.b-candy {
+  background-image: url("../images/memberStory/ico_candy.png");
 }
 
 .ms-history {
@@ -143,4 +156,12 @@ button {
 }
 .ms-cont-desc {
   padding: 0 20px;
+}
+
+.ms-cont-bar {
+  width: 100%;
+  height: 1px;
+  background-color: #efefef;
+  margin: 20px 0;
+  padding: 0 10px;
 }
