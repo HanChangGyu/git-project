@@ -1,0 +1,48 @@
+.body-video {
+  background-image: url("../images/common/blackpink_simless_pattern.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.main-box {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+}
+.card-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+}
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0px;
+}
+.video-card img {
+  width: 100%;
+  display: block;
+}
+iframe {
+  display: block;
+}
+.video-date {
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+.video-title {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 50px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.page-title {
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
