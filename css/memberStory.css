@@ -165,3 +165,28 @@ button {
   margin: 20px 0;
   padding: 0 10px;
 }
+
+/* detail */
+
+.ms-deatail-cont {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.ms-comment-footer {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.ms-c-f-box {
+  box-sizing: border-box;
+  width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.ms-c-f-input > textarea {
+  width: 100%;
+}
