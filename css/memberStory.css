@@ -72,9 +72,6 @@ button {
   font-weight: 300;
 }
 
-.ms-nav-check {
-  display: none;
-}
 .ms-nav-link {
   position: absolute;
   top: 0;
@@ -158,7 +155,21 @@ button {
   padding: 0 20px;
 }
 
+/* checkbox test */
+
+#ms-view-jisoo {
+  display: none;
+}
+
 #ms-cont-jisoo {
+  display: none;
+}
+
+#ms-view-jisoo:checked {
+  background-color: #000;
+}
+
+#ms-view-jisoo:checked ~ #ms-cont-all {
   display: none;
 }
 
