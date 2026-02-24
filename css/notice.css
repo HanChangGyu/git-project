@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    position: relative;
+    padding-top: 50px;
 }
 
 .hero {
