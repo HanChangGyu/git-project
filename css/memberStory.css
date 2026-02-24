@@ -1,0 +1,167 @@
+/* 임시 리셋 처리 */
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+}
+input:ch {
+  border: hidden;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+button {
+  border: 0;
+}
+
+/* 상위 box  */
+.content {
+  min-width: 1000px;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ms-nav {
+  width: 300px;
+}
+
+.ms-nav-container {
+  min-width: 300px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.ms-name-box {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.ms-avartor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.ms-nav-name {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.ms-nav-check {
+  display: none;
+}
+.ms-nav-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.ms-nav-link:hover {
+  background-color: #99999926;
+}
+
+/* cont 영역 */
+
+.ms-cont {
+  width: 700px;
+  padding: 20px;
+}
+
+.ms-con-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ms-comment-box {
+  padding: 20px;
+}
+
+.ms-comment-name {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ms-comment {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.ms-reaction-box {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.ms-reaction-btn {
+  cursor: pointer;
+  min-width: 80px;
+  height: 30px;
+  background-color: #efefef;
+  background-image: url("../images/memberStory/ico_tumbsup.png");
+  background-repeat: no-repeat;
+  background-position: 13px 4px;
+  padding-left: 30px;
+  border-radius: 20px;
+  border: 1px solid #bbbbbb;
+}
+
+.ms-history {
+  padding: 0 20px;
+  color: #4d4d4d;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.ms-cont-img {
+  width: 100%;
+  padding: 20px;
+}
+
+.ms-cont-img > img {
+  border-radius: 20px;
+}
+.ms-cont-desc {
+  padding: 0 20px;
+}
+
+#ms-cont-jisoo {
+  display: none;
+}
+
+#ms-view-jisoo:checked ~ #ms-cont-jisoo {
+  display: block;
+}
