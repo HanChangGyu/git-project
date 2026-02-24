@@ -7,18 +7,6 @@ li {
   padding: 0;
 }
 
-input {
-  padding: 0;
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-}
-input:ch {
-  border: hidden;
-}
-
 img {
   width: 100%;
   vertical-align: middle;
@@ -157,15 +145,16 @@ button {
 
 /* checkbox test */
 
-#ms-view-jisoo {
+.mTarget {
   display: none;
 }
 
-#ms-cont-jisoo {
-  display: none;
+.testestest {
+  position: absolute;
+  top: 500px;
 }
-
-#ms-view-jisoo:checked {
+#ms-view-jisoo:checked ~ .ms-nav-link,
+#ms-view-jisoo:checked ~ .testestest {
   background-color: #000;
 }
 
@@ -175,4 +164,8 @@ button {
 
 #ms-view-jisoo:checked ~ #ms-cont-jisoo {
   display: block;
+}
+
+.mTarget:target {
+  display: block !important;
 }
