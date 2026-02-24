@@ -71,6 +71,10 @@ main {
   color: inherit;
 }
 
+.notice-number {
+    padding: 10px;
+}
+
 .notice-badge {
   color: pink;
   background-color: black;
@@ -80,6 +84,10 @@ main {
 
 .notice-list {
   text-align: left;
+}
+
+.pagination {
+    padding-bottom: 50px;
 }
 
 .search-box {
@@ -113,10 +121,11 @@ main {
 }
 
 .btn-search {
-  font-size: 20px;
-  border: 1px solid #878585;
-  text-decoration: none;
-  font-weight: 600;
-  background-color: white;
-  cursor: pointer;
+    font-size: 20px;
+    border: 1px solid #878585;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+    width: 55px;
 }
