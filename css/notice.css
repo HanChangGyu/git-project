@@ -20,7 +20,6 @@ main {
     justify-content: center;
 }
 
-
 .notice-wrapper {
     padding: 80px 0;
     width: 100%;
@@ -43,7 +42,6 @@ main {
     margin-bottom: 50px;
     color: black;
 }
-
 
 .table-head th{
     border-top: 2px solid black;
@@ -74,6 +72,10 @@ main {
   color: inherit;
 }
 
+.notice-number {
+    padding: 10px;
+}
+
 .notice-badge {
     color: pink;
     background-color: black;
@@ -85,7 +87,11 @@ main {
     text-align: left;
 }
 
-.search-box{
+.pagination {
+    padding-bottom: 50px;
+}
+
+.search-box form{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +105,7 @@ main {
     line-height: 40px;
     padding: 0;
     box-sizing: border-box;
-    vertical-align: bottom;
+    border-radius: 5px;
 }
 .select-search {
     font-size: 20px;
@@ -107,7 +113,6 @@ main {
     text-decoration: none;
     font-weight: 600;
     cursor: pointer;
-
 }
 
 .input-search {
@@ -123,6 +128,7 @@ main {
     font-weight: 600;
     background-color: white;
     cursor: pointer;
+    width: 55px;
 }
 
 
