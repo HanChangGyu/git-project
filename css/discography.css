@@ -39,7 +39,7 @@
   height: 100%; /* 부모 높이 따라감 */
   margin: 0 auto;
 }
-.banner-links {
+.sns-links {
   position: absolute;
   bottom: 20px;
   left: 0;
@@ -63,9 +63,9 @@
 }
 .album-detail {
   display: flex;
-  margin: 50px auto;
+  margin: 100px auto;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
 
   flex-wrap: wrap; /* 좁아지면 아래로 내려가기*/
   max-width: 1200px;
@@ -77,14 +77,34 @@
   height: auto;
   margin-bottom: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 
 .detail-left {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
+  gap: 50px;
   flex: 1; /* 공간을 공평하게 나눠 가짐 */
   min-width: 320px;
+}
+.left-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 13px;
+}
+.left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding-left: 50px;
+}
+.left-box h3 {
+  color: #767676;
+  font-size: 14px;
 }
 
 .detail-right {
@@ -113,6 +133,8 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  margin-top: 150px;
 }
 
 .discography h2 {
