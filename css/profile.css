@@ -1,0 +1,55 @@
+  /* 1. 배경 및 텍스트 색상 변경 */
+  .profile_body {
+    background-color: #2a2a2a; /* 요청하신 배경색 */
+    color: #ffffff;           /* 전체 글씨 흰색 */
+    }
+
+  .profile_container {
+            width: 90%;
+            max-width: 1200px; 
+            margin: 0 auto; 
+            display: flex;
+            flex-direction: column;       
+            padding-top: 100px;   
+            gap: 120px;      
+        }
+   
+    .profileMain {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+   
+    .members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+   
+    .members li {
+            list-style: none;
+            margin: 10px;
+            text-align: center;
+        }
+   
+    .members img:hover {
+            transform: translateY(-5px) scale(1.05); /* 위로 뜨면서 1.05배 확대 */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+        }
+        
+    .profile_Awards {
+        margin-bottom: 100px;
+        line-height: 2.5;
+    }
+    
+        section, main {
+        text-align: center;
+        }   
+
+    section h2 {
+            margin-bottom: 40px;  
+            color: #DD338c;  
+        }
+
