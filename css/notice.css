@@ -1,13 +1,52 @@
-table {
-    border-collapse: collapse;
+body {
+    width: 100%;
+    background: white;
+    color: black;
+
 }
 
-th {
-    border: 1px solid black;
-    padding : 15px;
+.notice-wrapper {
+    padding: 100px;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin : 0 auto;
     text-align: center;
 }
 
-td {
-    border: 1px solid black;
+.page-title {
+    letter-spacing: 30px;
+    padding: 80px;
+    font-size: 50px;
+}
+
+.notice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+
+.table-head th{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.table-head th{
+    padding : 20px;
+}
+
+.table-body {
+    font-size: 16px;
+}
+
+.table-body td {
+    border-bottom: 1px solid black; 
+    padding: 20px;
+}
+
+.notice-list {
+    text-align: left;
 }
