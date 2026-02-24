@@ -2,11 +2,8 @@
 .profile_body {
     background-color: #2a2a2a; /* 요청하신 배경색 */
     color: #ffffff;           /* 전체 글씨 흰색 */
-    margin: 0;
-    /* 스크롤 스냅 활성화 */
-    scroll-snap-type: y mandatory; 
-    overflow-y: scroll;
-    height: 100vh;
+    margin: 0; /* 스크롤 스냅 활성화 */
+    overflow-y: auto;
     }
 
 .profile_container {
@@ -30,9 +27,11 @@
             display: flex;
             flex-wrap: wrap;       /* 자리가 없으면 다음 줄로 넘김 */
             justify-content: space-between; /* 좌우 끝 정렬 */
-            gap: 40px 2%; /* 상하 40px, 좌우 2% 간격 */
+            gap: 40px 40px; /* 상하 40px, 좌우 40px 간격 */
             padding: 0;
             list-style: none;
+            margin-top: 150px;
+            margin-bottom: 180px;
         }
    
 .member-card {
@@ -66,8 +65,8 @@
         }
         
 .profile_Awards {
-        margin-bottom: 100px;
-        line-height: 2.5;
+    margin-bottom: 100px;
+    line-height: 2.5;
     }
     
 .awards-content {
