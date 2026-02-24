@@ -41,6 +41,7 @@ main {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 50px;
+    color: black;
 }
 
 
@@ -64,6 +65,15 @@ main {
     padding: 20px;
 }
 
+.table-body td a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.table-body td a:visited {
+  color: inherit;
+}
+
 .notice-badge {
     color: pink;
     background-color: black;
@@ -74,4 +84,45 @@ main {
 .notice-list {
     text-align: left;
 }
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+
+.select-search,
+.input-search,
+.btn-search {
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+.select-search {
+    font-size: 20px;
+    border: 1px solid #878585;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.input-search {
+    background-color:  #ececec;
+    border: none;
+}
+
+
+.btn-search {
+    font-size: 20px;
+    border: 1px solid #878585;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+}
+
 

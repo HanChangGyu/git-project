@@ -52,7 +52,10 @@
                 <p class="notice-badge">notice</p>
               </td>
               <td class="notice-list">
-                [NOTICE] BLACKPINK 3rd Mini Album 'DEADLINE' 발매 안내
+                <a href="/notice3.html">
+                  [NOTICE] BLACKPINK 3rd Mini Album 'DEADLINE' HOURGLASS
+                  TOUR(OFFLINE)
+                </a>
               </td>
               <td>2026-02-23</td>
             </tr>
@@ -61,16 +64,19 @@
                 <p class="notice-badge">notice</p>
               </td>
               <td class="notice-list">
-                [NOTICE] BLACKPINK 3rd Mini Album 'DEADLINE' HOURGLASS
-                TOUR(ONLINE)
+                <a href="/notice2.html">
+                  [NOTICE] BLACKPINK 3rd Mini Album 'DEADLINE' HOURGLASS
+                  TOUR(ONLINE)
+                </a>
               </td>
               <td>2026-02-23</td>
             </tr>
             <tr>
               <td><p class="notice-badge">notice</p></td>
               <td class="notice-list">
-                [NOTICE] BLACKPINK 3rd Mini Album 'DEADLINE' HOURGLASS
-                TOUR(ONLINE)
+                <a href="/notice1.html">
+                  [NOTICE] BLACKPINK 3rd Mini Album 'DEADLINE' 발매 안내
+                </a>
               </td>
               <td>2026-02-23</td>
             </tr>
@@ -94,16 +100,16 @@
           <a href="#">&raquo;</a>
         </div>
 
-        <div>
+        <div class="search-box">
           <form action="/git-project/notice.html" method="get">
-            <select name="search-item">
+            <select name="search-item" class="select-search">
               <option value="all">전체</option>
               <option value="title">제목</option>
               <option value="name">작성자</option>
               <option value="content">내용</option>
             </select>
-            <input type="text" name="notice-search-text" />
-            <button type="submit">검색</button>
+            <input type="text" name="notice-search-text" class="input-search" />
+            <button type="submit" class="btn-search">검색</button>
           </form>
         </div>
       </section>
