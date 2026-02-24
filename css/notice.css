@@ -1,52 +1,122 @@
 body {
-    width: 100%;
-    background: white;
-    color: black;
+  width: 100%;
+  background: white;
+  color: black;
+}
 
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
 .notice-wrapper {
-    padding: 100px;
-    width: 100%;
-    min-height: 100vh;
-    box-sizing: border-box;
-    margin : 0 auto;
-    text-align: center;
+  padding: 80px 0;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page-title {
-    letter-spacing: 30px;
-    padding: 80px;
-    font-size: 50px;
+  letter-spacing: 15px;
+  padding-bottom: 80px;
+  font-size: 40px;
 }
 
 .notice-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 50px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  color: black;
 }
 
-
-.table-head th{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    font-weight: bold;
-    font-size: 20px;
+.table-head th {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  font-size: 25px;
 }
 
-.table-head th{
-    padding : 20px;
+.table-head th {
+  padding: 20px;
 }
 
 .table-body {
-    font-size: 16px;
+  font-size: 20px;
 }
 
 .table-body td {
-    border-bottom: 1px solid black; 
-    padding: 20px;
+  border-bottom: 0.5px solid black;
+  padding: 20px;
+}
+
+.table-body td a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.table-body td a:visited {
+  color: inherit;
+}
+
+.notice-badge {
+  color: pink;
+  background-color: black;
+  border-radius: 30px;
+  padding: 10px;
 }
 
 .notice-list {
-    text-align: left;
+  text-align: left;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.select-search,
+.input-search,
+.btn-search {
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  border-radius: 5px;
+}
+.select-search {
+  font-size: 20px;
+  border: 1px solid #878585;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.input-search {
+  background-color: #ececec;
+  border: none;
+}
+
+.btn-search {
+  font-size: 20px;
+  border: 1px solid #878585;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
 }
