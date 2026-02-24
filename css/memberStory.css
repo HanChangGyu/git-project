@@ -145,14 +145,6 @@ button {
 
 /* checkbox test */
 
-.mTarget {
-  display: none;
-}
-
-.testestest {
-  position: absolute;
-  top: 500px;
-}
 #ms-view-jisoo:checked ~ .ms-nav-link,
 #ms-view-jisoo:checked ~ .testestest {
   background-color: #000;
@@ -164,6 +156,10 @@ button {
 
 #ms-view-jisoo:checked ~ #ms-cont-jisoo {
   display: block;
+}
+
+.mTarget {
+  display: none;
 }
 
 .mTarget:target {
