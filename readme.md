@@ -1,9 +1,11 @@
-markdown#
-BLACKPINK 팬 홈페이지
+Markdown
+
+# BLACKPINK 팬 홈페이지
 
 ## 프로젝트 소개
 
-BLACKPINK 팬 페이지 만들기(GIT & GITHUB 이용해서 협업 프로젝트)
+BLACKPINK 팬 페이지 만들기
+(GIT & GITHUB 이용해서 협업 프로젝트)
 
 ## 팀원
 
@@ -11,7 +13,7 @@ BLACKPINK 팬 페이지 만들기(GIT & GITHUB 이용해서 협업 프로젝트)
 김종찬 : PROFILE
 원세빈 : DISCOGRAPHY
 안준영 : GALLERY
-한창규 : VIDEO 전체 arrange
+한창규 : VIDEO 및 전체 arrange
 김나연 : MEMBER STORY
 임주연 : NOTICE
 
@@ -33,7 +35,54 @@ BLACKPINK 팬 페이지 만들기(GIT & GITHUB 이용해서 협업 프로젝트)
 
 ## 폴더 구조
 
+/git-project
+├── index.html
+├── html/
+│ ├── memberStories/
+│ │ ├── jennie.html
+│ │ ├── jennieDetail.html
+│ │ ├── jisoo.html
+│ │ ├── jisooDetail.html
+│ │ ├── lisa.html
+│ │ ├── lisaDetail.html
+│ │ ├── rose.html
+│ │ └── roseDetail.html
+│ ├── discography.html
+│ ├── gallery.html
+│ ├── memberStory.html
+│ ├── notice.html
+│ ├── profile.html
+│ └── video.html
+├── css/
+│ ├── common.css
+│ ├── commonReverse.css
+│ ├── discography.css
+│ ├── gallery.css
+│ ├── main.css
+│ ├── memberStory.css
+│ ├── notice.css
+│ ├── profile.css
+│ ├── snsContact.css
+│ └── video.css
+├── images/
+│ ├── common
+│ ├── discography
+│ ├── gallery
+│ └── memberStory
+└── readme.md
+
 ## 주요 기능
+
+- HTML/CSS을 통해 웹사이트 구현
+- Git 브랜치 통해 협업
+- 메인 페이지에서 각 메뉴(PROFILE, DISCOGRAPHY, GALLERY, VIDEO, MEMBER STORY, NOTICE)로 이동 가능
+- 아티스트 프로필 정보 제공
+- 앨범 및 디스코그래피 소개
+- 이미지 갤러리 페이지 구현
+- 영상 콘텐츠 페이지 구현
+- 멤버 스토리 인스타그램 형식으로 구성
+- 공지사항 페이지 구현
+- 공통 레이아웃 Header / Footer 구조 적용
 
 ## 컨벤션
 
@@ -70,21 +119,21 @@ css 폴더에 모든 css 파일 넣음. html에서 style 하신 분들 css 파�
 
 ## 트러블 슈팅
 
-### commit/push/pr
+### commit/push/PR 과정에서의 오류
 
 문제:
 pr이 올라오지 않음
 
 원인:
-commit만 올렸거나 push만 한 상태일 것
+commit만 하고 push를 하지 않았거나, push는 했지만 PR 생성을 하지 않음.
 
 해결:
-add, commit, push, pr 과정 다시 점검 => 과정을 빼먹지는 않았다 체크
+add -> commit -> push -> pr 순서 다시 점검 => 각 단계가 제대로 진행되었는지 확인하기
 
 ### feature/index pull conflict
 
 문제:
-PR은 DEV에 잘 돼있는데 왜 feature/index에서 pull이 안 됨
+PR은 DEV에 잘 되어있는데 왜 feature/index에서 pull이 안 됨
 
 원인:
 merge를 하지 않아서
@@ -95,7 +144,7 @@ git pull origin dev
 git checkout feature/index
 git merge dev
 
-### merge conflict
+### Merge Conflict
 
 문제: git pull 과정에서 memberStory.html 파일에 충돌 발생.
 
@@ -111,7 +160,7 @@ git merge dev
       </p>
     </footer>
 
-적용되지 않음
+적용되지 않은 상태
 
 <footer></footer>
 
@@ -120,12 +169,12 @@ footer 적용하여 수정함.
 
 ### Merge Conflict
 
-문제: git pull 과정에서 notice.html 파일에 충돌 발생.
+문제: git pull 과정에서 notice.html 파일에 충돌 발생
 
-원인: 같은 부분을 서로 다른 브랜치에서 수정했기 때문.
+원인: 같은 부분을 서로 다른 브랜치에서 수정했기 때문
 
 해결: 충돌 표시(<<<<<<, ======, >>>>>>)를 직접 수정하고
-의도한 코드만 남긴 뒤 재커밋하여 해결.
+의도한 코드만 남긴 뒤 재커밋하여 해결
 
 ### 폴더 구조 정리
 
@@ -162,13 +211,25 @@ index.html을 제외한 모든 html 파일들을 전부 html이라는 별도의 
 => 폴더 구조 가독성 좋아짐 => 유지보수 수월
 (단, HTML 파일 위치 변경으로 인해: <a href> 경로 수정 필요, CSS 경로 수정 필요, 이미지 경로 수정 필요할 수도??)
 
-### 전체 다 PR 올리지 말고 COMMIT 만 해주세요!!
+### PULL 과정에서의 오류
 
-### 나연님 -> 버그 해결
+문제:
+html 폴더 내 memberStorys 폴더 생성하였고 PULL하면 memberStorys폴더 있어야 했지만 dev에 없었음
 
-### html 폴더 내 memberStorys 폴더 생성 -> 풀 받으면 폴더 있을 것 -> dev 쪽에는 지금 없음 -> 폴더 생성하기.
+해결:
+폴더 생성해서 파일 추가하기
 
-### notice -> 버그 해결
+### Conflict 최소화
+
+문제:
+여러 명이 동시에 작업 중에 PR이 많아지면 정리하기 어려워지고 Merge Conflict 발생 확률 높아짐
+
+해결:
+
+- 전체 다 PR 올리지 말고 COMMIT만 하기(merge 하지 말고 브랜치에만 정리하기) => 정리된 후 PR 진행하기
+- 서로 대화하면서 수시로 pull 하기
+
+### 나연님 -> 버그 해결(2026.2.24 강민님과 디스코드에서 대화 나눔)?????
 
 ## 라이선스
 
