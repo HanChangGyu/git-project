@@ -105,13 +105,6 @@ button {
   font-weight: 500;
 }
 
-.ms-con-mark {
-  width: 16px;
-  height: 16px;
-  background-size: 16px;
-  background-image: url("../images/memberStory/ico_mark.png");
-}
-
 .ms-comment-box {
   padding: 20px;
 }
