@@ -10,6 +10,7 @@ li {
 img {
   width: 100%;
   vertical-align: middle;
+  background-repeat: no-repeat;
 }
 
 button {
@@ -74,6 +75,7 @@ button {
   cursor: pointer;
 }
 
+.ms-nav-active,
 .ms-nav-link:hover {
   background-color: #99999926;
 }
@@ -141,27 +143,4 @@ button {
 }
 .ms-cont-desc {
   padding: 0 20px;
-}
-
-/* checkbox test */
-
-#ms-view-jisoo:checked ~ .ms-nav-link,
-#ms-view-jisoo:checked ~ .testestest {
-  background-color: #000;
-}
-
-#ms-view-jisoo:checked ~ #ms-cont-all {
-  display: none;
-}
-
-#ms-view-jisoo:checked ~ #ms-cont-jisoo {
-  display: block;
-}
-
-.mTarget {
-  display: none;
-}
-
-.mTarget:target {
-  display: block !important;
 }

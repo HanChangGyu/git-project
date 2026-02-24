@@ -1,55 +1,145 @@
-/* 1. 배경 및 텍스트 색상 변경 */
+  /* 1. 배경 및 텍스트 색상 변경 */
 .profile_body {
-  background-color: #2a2a2a; /* 요청하신 배경색 */
-  color: #ffffff; /* 전체 글씨 흰색 */
-}
+    background-color: #2a2a2a; /* 요청하신 배경색 */
+    color: #ffffff;           /* 전체 글씨 흰색 */
+    margin: 0; /* 스크롤 스냅 활성화 */
+    overflow-y: auto;
+    }
 
 .profile_container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-  gap: 120px;
-}
-
+            width: 100%;
+            max-width: 1200px; 
+            margin: 0 auto; 
+            display: flex;
+            flex-direction: column;       
+            padding-top: 100px;   
+            gap: 120px;      
+        }
+   
 .profileMain {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+   
 .members {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+            display: flex;
+            flex-wrap: wrap;       /* 자리가 없으면 다음 줄로 넘김 */
+            justify-content: space-between; /* 좌우 끝 정렬 */
+            gap: 40px 40px; /* 상하 40px, 좌우 40px 간격 */
+            padding: 0;
+            list-style: none;
+            margin-top: 180px;
+            margin-bottom: 180px;
+        }
+   
+.member-card {
+        display: flex;         /* 사진과 텍스트를 가로로 배치 */
+        align-items: center;   /* 세로 중앙 정렬 */
+        justify-content: flex-start;
+        width: 45%;            /* 한 줄에 2명이 들어가도록 약 50% 설정 */
+        box-sizing: border-box;
+        text-align: left;      /* 카드 내 텍스트 왼쪽 정렬 */
+        background: rgba(255, 255, 255, 0.05); /* 카드 영역 구분을 위한 살짝 밝은 배경 */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+.member-card img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        margin-left: 0;           /* 왼쪽 여백 제거 */
+        margin-right: 25px;       /* 텍스트와의 간격만 유지 */
+        border-radius: 5px;
+        display: block;           /* 불필요한 하단 공백 제거 */
+    }
 
 .members li {
-  list-style: none;
-  margin: 10px;
-  text-align: center;
-}
-
+        list-style: none;
+        margin: 0;
+        text-align: left;
+    }
+   
 .members img:hover {
-  transform: translateY(-5px) scale(1.05); /* 위로 뜨면서 1.05배 확대 */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
+            transform: translateY(-5px) scale(1.05); /* 위로 뜨면서 1.05배 확대 */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+        }
+        
 .profile_Awards {
-  margin-bottom: 100px;
-  line-height: 2.5;
+    margin-bottom: 100px;
+    line-height: 2.5;
+    }
+    
+.awards-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 50px; /* 이미지와 텍스트 사이 간격 */}
+
+.awards-image img {
+    width: 450px;           /* 이미지 크기 적절히 조절 */
+    height: auto;
+    display: block;
 }
 
-section,
-main {
-  text-align: center;
+.awards-text {
+    text-align: left;       /* 텍스트 왼쪽 정렬 */
+    flex: 1;                
+    max-width: 600px;
 }
 
-section h2 {
-  margin-bottom: 40px;
-  color: #dd338c;
+.awards-text dl {
+    margin-bottom: 30px;
+}
+
+.awards-text dt {
+    font-size: 1.2rem;
+    color: #DD338c;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.awards-text dd {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #d4d4d4;
+    padding-left: 10px;
+}
+    section, main {
+        text-align: center;
+        }   
+
+    section h2 {
+            margin-bottom: 40px;  
+            color: #DD338c;  
+        }
+
+@media (max-width: 900px) {
+    /* 1. 멤버 카드를 세로로 1개씩 배치 */
+    .member-card {
+        width: 100%; /* 너비를 꽉 채워 세로 나열 */
+        margin-bottom: 20px;
+    }
+
+    /* 2. 수상 경력 섹션 가로 배치를 세로 배치로 변경 */
+    .awards-content {
+        flex-direction: column; /* 이미지 아래에 텍스트가 오도록 변경 */
+        align-items: center;
+        gap: 30px;
+    }
+
+    .awards-text {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .awards-image img {
+        width: 100%; /* 이미지가 화면 너비에 맞게 조절 */
+        max-width: 500px;
+    }
 }
