@@ -134,6 +134,8 @@ input:active {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+
+  z-index: 10;
 }
 
 .ms-nav-active,
@@ -189,6 +191,12 @@ input:active {
   border: 1px solid #bbbbbb50;
   background-repeat: no-repeat;
   background-position: 13px 6px;
+
+  z-index: 11;
+}
+
+.ms-reaction-btn:hover {
+  background-color: #fff;
 }
 
 .ms-reaction-btn.b-tumup {
