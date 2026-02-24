@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile - BLACKPINK 비공식 홈페이지</title>
     <link rel="stylesheet" href="css/commonReverse.css" />
+    <Style> /* profile 페이지 CSS 적용 */
+        .profile_container {
+            width: 90%;
+            max-width: 1200px; 
+            margin: 0 auto; 
+            display: flex;
+            flex-direction: column;
+        }
+        .profileMain {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .members li {
+            list-style: none;
+            margin: 10px;
+            text-align: center;
+        }
+        .members img:hover {
+            transform: translateY(-5px) scale(1.05); /* 위로 뜨면서 1.05배 확대 */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+        }
+        
+        section, main {
+        text-align: center;
+        }   
+    </Style>
+  </head>
+  <body>
     <link rel="stylesheet" href="css/profile.css" />
     <link rel="stylesheet" href="css/snsContact.css" />
     <link
@@ -31,6 +67,15 @@
     </header>
     <div class="profile_container">
         <main class="profileMain"> <!-- 메인 로고 -->
+            <img src="https://www.freelogovectors.net/wp-content/uploads/2023/09/blackpink_logo_freelogovectors.net_.png" alt="BLACKPINK" width="640" height="400"/>
+        </main>
+        <section> <!-- About BLACKPINK-->
+        <h2>About BLACKPINK</h2>
+            <ul class="members">
+            <li>
+                <img src="https://ygfamily.com/contents/images/2025/09/profile%282560x1480%29.jpg" alt="BlACKPINK_Profile_Cover" width="640" height="400"/>
+            <blockquote><h1>"The Biggest Girl Group In The World"</h1></blockquote>
+                <p> 
           <img src="https://ygfamily.com/contents/images/2025/09/profile%282560x1480%29.jpg" alt="BlACKPINK_Profile_Cover" width="1280" height="800"/>  
         </main>
         <section> <!-- About BLACKPINK-->
@@ -62,6 +107,7 @@
                 <article><h3>LISA</h3>97.03.27 </article></li>
             </ul>
         </section> 
+        <section> <!-- 수상경력 -->
         <section class="profile_Awards"> <!-- 수상경력 -->
             <h2>Awards & Achievements</h2>
             <img src="https://i.namu.wiki/i/yrJvKPwTITSfvUGuqOXJLuDtyWlMh_2IAWciN809HdUMYS0lTyW_pPgAvzUNLxT5NIJcQY2RJQ4IPRvRt3da-A.webp" alt="BLACKPINK_Awards" width="504" height="550"/>
