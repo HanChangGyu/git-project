@@ -8,6 +8,7 @@ body {
 .notice-wrapper {
     padding: 100px;
     width: 100%;
+    max-width: 1200px;
     min-height: 100vh;
     box-sizing: border-box;
     margin : 0 auto;
@@ -15,9 +16,9 @@ body {
 }
 
 .page-title {
-    letter-spacing: 30px;
+    letter-spacing: 15px;
     padding: 80px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .notice-table {
@@ -50,3 +51,4 @@ body {
 .notice-list {
     text-align: left;
 }
+
