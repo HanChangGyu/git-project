@@ -1,0 +1,301 @@
+/* 임시 리셋 처리 */
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  overflow: hidden;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button:focus,
+button:active,
+textarea:focus,
+textarea:active,
+input:focus,
+input:active {
+  box-shadow: none;
+  outline: none;
+}
+
+/* 자주쓰는 것 빼두기 */
+.fw300 {
+  font-weight: 300;
+}
+.fw400 {
+  font-weight: 400;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw600 {
+  font-weight: 600;
+}
+.fw700 {
+  font-weight: 700;
+}
+.fw800 {
+  font-weight: 800;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+.fs14 {
+  font-size: 14px;
+}
+.fs16 {
+  font-size: 16px;
+}
+.fs18 {
+  font-size: 18px;
+}
+
+/* 상위 box  */
+.content {
+  min-width: 1000px;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ms-nav {
+  width: 300px;
+}
+
+.ms-nav-container {
+  min-width: 300px;
+  padding: 20px 0;
+  position: fixed;
+}
+
+.ms-name-box {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px;
+}
+
+.ms-avartor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.ms-nav-name {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.ms-nav-link,
+.ms-detail-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+.ms-nav-active,
+.ms-nav-link:hover {
+  background-color: #99999926;
+}
+
+/* cont 영역 */
+
+.ms-cont {
+  width: 700px;
+  padding: 20px;
+}
+
+.ms-cont > ul > li {
+  position: relative;
+}
+
+.ms-con-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ms-cont-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.ms-comment-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.ms-cont-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ms-reaction-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ms-reaction-btn {
+  cursor: pointer;
+  min-width: 70px;
+  height: 30px;
+  background-color: #efefef;
+  padding-left: 20px;
+  border-radius: 20px;
+  border: 1px solid #bbbbbb50;
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+  z-index: 11;
+}
+
+.ms-reaction-btn:hover {
+  background-color: #ddd;
+}
+
+.ms-reaction-btn.b-tumup {
+  background-image: url("../images/memberStory/ico_tumbsup.png");
+}
+.ms-reaction-btn.b-heart {
+  background-image: url("../images/memberStory/ico_haert.png");
+}
+.ms-reaction-btn.b-makeup {
+  background-image: url("../images/memberStory/ico_makeup.png");
+}
+.ms-reaction-btn.b-candy {
+  background-image: url("../images/memberStory/ico_candy.png");
+}
+
+.ms-history {
+  color: #4d4d4d;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.ms-cont-img > img {
+  border-radius: 20px;
+}
+
+.ms-cont-bar {
+  width: 100%;
+  height: 1px;
+  background-color: #efefef;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+/* detail */
+
+.ms-deatail-cont {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.ms-comment-footer {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.ms-cf-box {
+  width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.ms-cf-box > ul {
+  margin: 20px 0;
+}
+
+.ms-cf-box > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+.ms-cf-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ms-cf-input > textarea {
+  width: 100%;
+  border: 1px solid #99999950;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.ms-cf-users {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.u-icon {
+  background-color: #b3b3b3;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.ms-cf-comments {
+  padding: 0 20px;
+}
