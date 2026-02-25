@@ -73,3 +73,19 @@
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+.audio-btn {
+  background-color: #000;
+  color: hotpink;
+  border: 2px solid hotpink;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.audio-btn:hover {
+  background-color: hotpink;
+  color: #000;
+}

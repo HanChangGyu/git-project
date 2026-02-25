@@ -203,9 +203,15 @@
         Copyright(c) 2026 YG ENTERTAINMENT. All rights reserved.
       </p>
       <br />
-      <audio autoplay loop controls controlsList="listen">
-        <source src="/audios/(Instrumental).mp3" type="audio/mpeg" />
-      </audio>
+      <div class="custom-audio-player">
+        <audio id="myAudio" loop>
+          <source src="/audios/(Instrumental).mp3" type="audio/mpeg" />
+        </audio>
+
+        <button id="playBtn" class="audio-btn">
+          <i class="fa-solid fa-play"></i> PLAY / PAUSE
+        </button>
+      </div>
     </footer>
   </body>
 </html>
