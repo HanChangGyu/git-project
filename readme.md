@@ -35,41 +35,53 @@ BLACKPINK 팬 페이지 만들기
 
 ## 폴더 구조
 
-/git-project
+# 📁 git-project
+
+```bash
+git-project/
 ├── index.html
 ├── html/
-│ ├── memberStories/
-│ │ ├── jennie.html
-│ │ ├── jennieDetail.html
-│ │ ├── jisoo.html
-│ │ ├── jisooDetail.html
-│ │ ├── lisa.html
-│ │ ├── lisaDetail.html
-│ │ ├── rose.html
-│ │ └── roseDetail.html
-│ ├── discography.html
-│ ├── gallery.html
-│ ├── memberStory.html
-│ ├── notice.html
-│ ├── profile.html
-│ └── video.html
+│   ├── memberStories/
+│   │   ├── jennie.html
+│   │   ├── jennieDetail.html
+│   │   ├── jisoo.html
+│   │   ├── jisooDetail.html
+│   │   ├── lisa.html
+│   │   ├── lisaDetail.html
+│   │   ├── rose.html
+│   │   └── roseDetail.html
+│   ├── discography.html
+│   ├── gallery.html
+│   ├── memberStory.html
+│   ├── notice.html
+│   ├── profile.html
+│   └── video.html
 ├── css/
-│ ├── common.css
-│ ├── commonReverse.css
-│ ├── discography.css
-│ ├── gallery.css
-│ ├── main.css
-│ ├── memberStory.css
-│ ├── notice.css
-│ ├── profile.css
-│ ├── snsContact.css
-│ └── video.css
+│   ├── common.css
+│   ├── commonReverse.css
+│   ├── discography.css
+│   ├── gallery.css
+│   ├── main.css
+│   ├── memberStory.css
+│   ├── notice.css
+│   ├── profile.css
+│   ├── snsContact.css
+│   └── video.css
 ├── images/
-│ ├── common
-│ ├── discography
-│ ├── gallery
-│ └── memberStory
+│   ├── common/
+│   ├── discography/
+│   ├── gallery/
+│   └── memberStory/
 └── readme.md
+```
+
+## 📌 Description
+
+- `index.html` : 메인 페이지
+- `html/` : 서브 페이지 모음
+- `css/` : 스타일시트 파일
+- `images/` : 페이지별 이미지 리소스
+- `readme.md` : 프로젝트 설명 문서
 
 ## 주요 기능
 
@@ -181,32 +193,35 @@ footer 적용하여 수정함.
 문제:
 기존엔 html 파일들이 전부 최상위폴더에 있었는데, 최상위 폴더에 너무 많은 html 파일들이 있음
 
-git-project
+```bash
+git-project/
 ├── index.html
 ├── profile.html
 ├── gallery.html
 ├── discography.html
 ├── video.html
 ├── memberStory.html
-...
+└── ...
+```
 
 => 가독성 떨어짐, 구조 정리 어려움 => 유지보수 어려움
 
 해결:
 index.html을 제외한 모든 html 파일들을 전부 html이라는 별도의 폴더에 넣음
 
-/git-project
+```bash
+git-project/
 ├── index.html
 ├── html/
-│ ├── discography.html
-│ ├── gallery.html
-│ ├── profile.html
-│ ├── video.html
-│ └── memberStory.html
-...
+│   ├── discography.html
+│   ├── gallery.html
+│   ├── profile.html
+│   ├── video.html
+│   └── memberStory.html
 ├── css/
 ├── images/
-...
+└── ...
+```
 
 => 폴더 구조 가독성 좋아짐 => 유지보수 수월
 (단, HTML 파일 위치 변경으로 인해: <a href> 경로 수정 필요, CSS 경로 수정 필요, 이미지 경로 수정 필요할 수도??)
@@ -229,7 +244,7 @@ html 폴더 내 memberStorys 폴더 생성하였고 PULL하면 memberStorys폴�
 - 전체 다 PR 올리지 말고 COMMIT만 하기(merge 하지 말고 브랜치에만 정리하기) => 정리된 후 PR 진행하기
 - 서로 대화하면서 수시로 pull 하기
 
-### 나연님 -> 버그 해결(2026.2.24 강민님과 디스코드에서 대화 나눔)?????
+### 나연님 -> 버그 해결(2026.2.24 강민님과 디스코드에서 대화 나눔)
 
 ## 라이선스
 
