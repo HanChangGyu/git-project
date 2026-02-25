@@ -134,6 +134,8 @@ input:active {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+
+  z-index: 10;
 }
 
 .ms-nav-active,
@@ -157,23 +159,28 @@ input:active {
   font-weight: 500;
 }
 
-.ms-comment-box {
+.ms-cont-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   padding: 20px;
 }
 
-.ms-comment-name {
-  font-size: 12px;
-  font-weight: 500;
+.ms-comment-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
 }
 
-.ms-comment {
-  font-size: 12px;
-  font-weight: 300;
+.ms-cont-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .ms-reaction-box {
   width: 100%;
-  padding: 10px 20px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -188,7 +195,12 @@ input:active {
   border-radius: 20px;
   border: 1px solid #bbbbbb50;
   background-repeat: no-repeat;
-  background-position: 13px 6px;
+  background-position: 10px 6px;
+  z-index: 11;
+}
+
+.ms-reaction-btn:hover {
+  background-color: #ddd;
 }
 
 .ms-reaction-btn.b-tumup {
@@ -205,22 +217,13 @@ input:active {
 }
 
 .ms-history {
-  padding: 0 20px;
   color: #4d4d4d;
   font-size: 12px;
   font-weight: 400;
 }
 
-.ms-cont-img {
-  width: 100%;
-  padding: 20px;
-}
-
 .ms-cont-img > img {
   border-radius: 20px;
-}
-.ms-cont-desc {
-  padding: 0 20px 20px 20px;
 }
 
 .ms-cont-bar {
@@ -257,23 +260,23 @@ input:active {
 }
 
 .ms-cf-box > ul > li {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px;
 }
 
 .ms-cf-input {
-  padding: 0 20px;
-}
-
-.ms-cf-input > h3 {
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .ms-cf-input > textarea {
   width: 100%;
-  height: 1.5rem;
   border: 1px solid #99999950;
   border-radius: 5px;
-  padding: 15px;
+  padding: 5px;
 }
 
 .ms-cf-users {
@@ -281,12 +284,7 @@ input:active {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 20px;
-  gap: 20px;
-}
-
-.ms-cf-users > div > span {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .u-icon {
@@ -299,5 +297,5 @@ input:active {
 }
 
 .ms-cf-comments {
-  padding: 20px;
+  padding: 0 20px;
 }

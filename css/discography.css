@@ -5,14 +5,15 @@
   box-sizing: border-box; /* 테두리와 여백을 너비에 포함시켜 계산하게 함 */
 }
 
-.wrap {
+#wrap {
   max-width: 100%;
   margin: 0 auto;
+  background-image: url();
 }
 
 .banner-wrap {
   max-width: 100%;
-  height: 500px;
+  height: 700px;
   display: flex;
   position: relative;
   justify-content: center;
@@ -20,7 +21,8 @@
   background-size: cover; /* 배경 꽉차게 */
   background-repeat: no-repeat;
   background-position: center 70%;
-  background-image: url("https://i.pinimg.com/1200x/85/b5/9d/85b59d555034c391bc217933b3952866.jpg");
+  /* background-image: url("https://i.pinimg.com/736x/bc/ec/db/bcecdb7146feaded3d7ce324724b4594.jpg"); */
+  background-image: url(../images/discography/banner2.webp);
 }
 
 .banner-title {
@@ -29,7 +31,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
-  color: palevioletred;
+  color: rgba(155, 90, 90, 0.7);
   font-size: 100px;
 }
 .banner-inner {
@@ -121,6 +123,18 @@
   gap: 10px;
 }
 
+.track-list ol {
+  list-style-position: inside; /* 숫자를 안쪽으로 들여쓰기 */
+  padding: 0;
+  margin-top: 15px;
+}
+.track-list li {
+  font-size: 16px;
+  line-height: 2.5;
+
+  cursor: default;
+}
+
 .detail-right p {
   line-height: 1.8; /* 줄 간격을 넓혀야 읽기 편해요 */
   font-size: 16px;
@@ -201,10 +215,12 @@
   margin: 0;
 }
 
-.pre-button {
-  background-color: #feb9c6;
-  padding: 5px 8px 1px 8px;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: bold;
+.box .pre-button {
+  background-color: #000000;
+  padding: 4px 6px 1px 6px;
+
+  font-size: 18px;
+  font-weight: 2000;
+  color: #feb9c6;
+  -webkit-text-stroke: 0.5px #feb9c6;
 }
