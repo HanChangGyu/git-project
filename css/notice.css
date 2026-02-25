@@ -109,7 +109,7 @@ main {
 }
 .select-search {
   font-size: 20px;
-  border: 1px solid #878585;
+  border: 0.5px solid #aeacac;
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
@@ -118,14 +118,15 @@ main {
 .input-search {
   background-color: #ececec;
   border: none;
+  width: 300px;
 }
 
 .btn-search {
     font-size: 20px;
-    border: 1px solid #878585;
     text-decoration: none;
     font-weight: 600;
     background-color: white;
     cursor: pointer;
     width: 55px;
+    border: none;
 }
